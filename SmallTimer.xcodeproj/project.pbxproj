@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551228D616FBD26C00860341 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 551228D516FBD26C00860341 /* README.md */; };
 		555EF41B16FB42AB003A5974 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555EF41A16FB42AB003A5974 /* Cocoa.framework */; };
 		555EF42516FB42AB003A5974 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 555EF42316FB42AB003A5974 /* InfoPlist.strings */; };
 		555EF42716FB42AB003A5974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 555EF42616FB42AB003A5974 /* main.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		551228D516FBD26C00860341 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		555EF41716FB42AB003A5974 /* SmallTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555EF41A16FB42AB003A5974 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		555EF41D16FB42AB003A5974 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,6 +48,7 @@
 		555EF40E16FB42AB003A5974 = {
 			isa = PBXGroup;
 			children = (
+				551228D516FBD26C00860341 /* README.md */,
 				555EF42016FB42AB003A5974 /* SmallTimer */,
 				555EF41916FB42AB003A5974 /* Frameworks */,
 				555EF41816FB42AB003A5974 /* Products */,
@@ -155,6 +158,7 @@
 				555EF42516FB42AB003A5974 /* InfoPlist.strings in Resources */,
 				555EF42B16FB42AB003A5974 /* Credits.rtf in Resources */,
 				555EF43116FB42AB003A5974 /* MainMenu.xib in Resources */,
+				551228D616FBD26C00860341 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				555EF43616FB42AB003A5974 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
