@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 *.swp
 *~.nib
@@ -18,3 +19,23 @@ UserInterfaceState.xcuserstate
 
 # Windows image thumbnail file
 Thumbs.db
+=======
+# Xcode
+.DS_Store
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+>>>>>>> 81e739e50f5a51892be503e23067739b481ba8c5
