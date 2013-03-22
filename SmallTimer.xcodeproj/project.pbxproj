@@ -14,6 +14,8 @@
 		555EF42B16FB42AB003A5974 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 555EF42916FB42AB003A5974 /* Credits.rtf */; };
 		555EF42E16FB42AB003A5974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 555EF42D16FB42AB003A5974 /* AppDelegate.m */; };
 		555EF43116FB42AB003A5974 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 555EF42F16FB42AB003A5974 /* MainMenu.xib */; };
+		558A62B916FCA4EC00385C67 /* TimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 558A62B816FCA4EC00385C67 /* TimerView.xib */; };
+		558A62BC16FCA6E900385C67 /* TimerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 558A62BB16FCA6E900385C67 /* TimerWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +26,16 @@
 		555EF41E16FB42AB003A5974 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		555EF41F16FB42AB003A5974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		555EF42216FB42AB003A5974 /* SmallTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmallTimer-Info.plist"; sourceTree = "<group>"; };
-		555EF42416FB42AB003A5974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		555EF42616FB42AB003A5974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		555EF42816FB42AB003A5974 /* SmallTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmallTimer-Prefix.pch"; sourceTree = "<group>"; };
-		555EF42A16FB42AB003A5974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		555EF42C16FB42AB003A5974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		555EF42D16FB42AB003A5974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		555EF43016FB42AB003A5974 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		558A62B216FCA3F200385C67 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		558A62B316FCA3F200385C67 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		558A62B416FCA3F300385C67 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = ja; path = ja.lproj/Credits.rtf; sourceTree = "<group>"; };
+		558A62B816FCA4EC00385C67 /* TimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerView.xib; sourceTree = "<group>"; };
+		558A62BA16FCA6E900385C67 /* TimerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerWindowController.h; sourceTree = "<group>"; };
+		558A62BB16FCA6E900385C67 /* TimerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +92,10 @@
 			children = (
 				555EF42C16FB42AB003A5974 /* AppDelegate.h */,
 				555EF42D16FB42AB003A5974 /* AppDelegate.m */,
+				558A62BA16FCA6E900385C67 /* TimerWindowController.h */,
+				558A62BB16FCA6E900385C67 /* TimerWindowController.m */,
 				555EF42F16FB42AB003A5974 /* MainMenu.xib */,
+				558A62B816FCA4EC00385C67 /* TimerView.xib */,
 				555EF42116FB42AB003A5974 /* Supporting Files */,
 			);
 			path = SmallTimer;
@@ -139,6 +147,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = 555EF40E16FB42AB003A5974;
 			productRefGroup = 555EF41816FB42AB003A5974 /* Products */;
@@ -159,6 +168,7 @@
 				555EF42B16FB42AB003A5974 /* Credits.rtf in Resources */,
 				555EF43116FB42AB003A5974 /* MainMenu.xib in Resources */,
 				551228D616FBD26C00860341 /* README.md in Resources */,
+				558A62B916FCA4EC00385C67 /* TimerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +181,7 @@
 			files = (
 				555EF42716FB42AB003A5974 /* main.m in Sources */,
 				555EF42E16FB42AB003A5974 /* AppDelegate.m in Sources */,
+				558A62BC16FCA6E900385C67 /* TimerWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +191,7 @@
 		555EF42316FB42AB003A5974 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				555EF42416FB42AB003A5974 /* en */,
+				558A62B316FCA3F200385C67 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -188,7 +199,7 @@
 		555EF42916FB42AB003A5974 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				555EF42A16FB42AB003A5974 /* en */,
+				558A62B416FCA3F300385C67 /* ja */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -196,7 +207,7 @@
 		555EF42F16FB42AB003A5974 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				555EF43016FB42AB003A5974 /* en */,
+				558A62B216FCA3F200385C67 /* ja */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
