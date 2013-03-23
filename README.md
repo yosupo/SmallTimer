@@ -1,9 +1,11 @@
 SmallTimer
 ==========
 これは開発中のソフトです。
-Mac向けに作られた、画面に常駐してくれるキッチンタイマーのようなものを目指しています。
-MITライセンスです
 
+Q:何これ
+A:Dream.tifを見れば、何かわかるかも
+
+MITライセンスです
 License
 ==========
 Copyright (c) 2013 kohei morita <k_morita_gr@yahoo.co.jp>

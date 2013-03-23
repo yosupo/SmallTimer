@@ -8,6 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface TimerWindowController : NSWindowController
+@interface TimerWindowController : NSWindowController {
+    __weak IBOutlet NSTextField *setTimeField;
+    __weak IBOutlet NSTextField *timeField;
+}
+
+- (IBAction)pushStartButton:(id)sender;
 
 @end
