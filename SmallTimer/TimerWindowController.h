@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface TimerWindowController : NSWindowController {
+@interface TimerWindowController : NSWindowController <NSWindowDelegate> {
     __weak IBOutlet NSTextField *setTimeField;
     __weak IBOutlet NSTextField *timeField;
 }
