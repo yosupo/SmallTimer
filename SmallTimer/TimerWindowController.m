@@ -49,6 +49,11 @@
     }
 }
 
+- (IBAction)endTimeEditing:(id)sender
+{
+    [self pushStartButton:nil];
+}
+
 - (IBAction)pushStartButton:(id)sender
 {
     if (setTimeField.intValue) {

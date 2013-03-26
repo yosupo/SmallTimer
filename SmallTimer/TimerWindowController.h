@@ -14,5 +14,6 @@
 }
 
 - (IBAction)pushStartButton:(id)sender;
+- (IBAction)endTimeEditing:(id)sender;
 
 @end
