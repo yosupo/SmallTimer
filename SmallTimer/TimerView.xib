@@ -64,7 +64,7 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="240712687">
 								<int key="NSCellFlags">-1804599231</int>
-								<int key="NSCellFlags2">71304192</int>
+								<int key="NSCellFlags2">104858624</int>
 								<integer value="3" key="NSContents"/>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
@@ -216,8 +216,8 @@
 							<string key="NSAntiCompressionPriority">{250, 750}</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="635573110">
-								<int key="NSCellFlags">67108864</int>
-								<int key="NSCellFlags2">272629824</int>
+								<int key="NSCellFlags">70254657</int>
+								<int key="NSCellFlags2">272630848</int>
 								<string key="NSContents">00:00</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
@@ -238,7 +238,6 @@
 							<string key="NSFrame">{{292, 148}, {92, 32}}</string>
 							<reference key="NSSuperview" ref="17464488"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="268801308">
@@ -645,11 +644,6 @@
 						<reference key="parent" ref="17464488"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">186</int>
-						<reference key="object" ref="447708719"/>
-						<reference key="parent" ref="17464488"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
 						<reference key="object" ref="416973580"/>
 						<array class="NSMutableArray" key="children">
@@ -717,7 +711,12 @@
 						<reference key="parent" ref="17464488"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">197</int>
+						<int key="objectID">202</int>
+						<reference key="object" ref="447708719"/>
+						<reference key="parent" ref="17464488"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">203</int>
 						<reference key="object" ref="372871237"/>
 						<reference key="parent" ref="514145713"/>
 					</object>
@@ -741,13 +740,13 @@
 				<string key="183.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="184.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="185.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="186.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="187.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="195.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="196.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="197.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="YES" key="2.NSWindowTemplate.visibleAtLaunch"/>
+				<string key="202.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="203.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="NO" key="21.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="21.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -757,7 +756,7 @@
 				<boolean value="NO" key="26.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="26.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<array class="NSMutableArray" key="3.IBNSViewMetadataConstraints">
+				<array key="3.IBNSViewMetadataConstraints">
 					<reference ref="654961223"/>
 					<reference ref="580517026"/>
 					<reference ref="1055771431"/>
@@ -785,7 +784,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">200</int>
+			<int key="maxID">203</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

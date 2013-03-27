@@ -32,6 +32,7 @@
     [super windowDidLoad];
     self.window.delegate = self;
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    [self pushStartButton:nil];
 }
 
 - (void)timerRef:(NSTimer *)aTimer
@@ -58,15 +59,17 @@
 {
     if (setTimeField.intValue) {
         _startDate = [NSDate date];
-        _time = setTimeField.intValue * 60;
+        _time = setTimeField.intValue * 60 + 1;
         _timerTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(timerRef:) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timerTimer forMode:NSEventTrackingRunLoopMode];
         [self timerRef:_timerTimer];
     }
 }
+
 - (BOOL)windowShouldClose:(id)sender
 {
     [_timerTimer invalidate];
     return YES;
 }
+
 @end
