@@ -4,7 +4,6 @@ SmallTimer
 
 Q:何これ
 A:Dream.tifを見れば、何かわかるかも
-
 MITライセンスです
 License
 ==========

@@ -7,11 +7,14 @@
 //
 
 #import "TimerWindowController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface TimerWindowController () {
     NSDate *_startDate;
     NSUInteger _time;
     NSTimer *_timerTimer;
+    NSURL *_musicUrl;
+    AVAudioPlayer *_audio;
 }
 
 @end
@@ -32,7 +35,6 @@
     [super windowDidLoad];
     self.window.delegate = self;
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-    [self pushStartButton:nil];
 }
 
 - (void)timerRef:(NSTimer *)aTimer
@@ -44,8 +46,11 @@
     if (laberTime <= 0) {
         NSUserNotification *myNotification = [[NSUserNotification alloc] init];
         myNotification.title = @"たいまーだよ！";
-        myNotification.informativeText = [NSString stringWithFormat:@"%ld分たったよ!", _time / 60];
+        myNotification.informativeText = [NSString stringWithFormat:@"%ld分たったよ!", _time / 60 + 1];
         [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:myNotification];
+        _audio = [[AVAudioPlayer alloc] initWithContentsOfURL:_musicUrl error:nil];
+        _audio.numberOfLoops = 1;
+        [_audio play];
         [aTimer invalidate];
     }
 }
@@ -59,7 +64,7 @@
 {
     if (setTimeField.intValue) {
         _startDate = [NSDate date];
-        _time = setTimeField.intValue * 60 + 1;
+        _time = setTimeField.intValue * 1 + 1;
         _timerTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(timerRef:) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timerTimer forMode:NSEventTrackingRunLoopMode];
         [self timerRef:_timerTimer];
@@ -70,6 +75,17 @@
 {
     [_timerTimer invalidate];
     return YES;
+}
+
+- (IBAction)pushMusicSelectButton:(id)sender
+{
+    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+    [openPanel beginWithCompletionHandler:^(NSInteger result){
+        if (result == NSFileHandlingPanelOKButton) {
+            _musicUrl = openPanel.URL;
+            NSLog(@"%@", _musicUrl);
+        }
+    }];
 }
 
 @end

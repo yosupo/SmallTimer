@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		551228D616FBD26C00860341 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 551228D516FBD26C00860341 /* README.md */; };
-		555EF41B16FB42AB003A5974 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555EF41A16FB42AB003A5974 /* Cocoa.framework */; };
+		55325A9F1704B2F9009B8AC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55325A9E1704B2F9009B8AC3 /* Cocoa.framework */; };
 		555EF42516FB42AB003A5974 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 555EF42316FB42AB003A5974 /* InfoPlist.strings */; };
 		555EF42716FB42AB003A5974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 555EF42616FB42AB003A5974 /* main.m */; };
 		555EF42B16FB42AB003A5974 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 555EF42916FB42AB003A5974 /* Credits.rtf */; };
@@ -16,13 +16,14 @@
 		555EF43116FB42AB003A5974 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 555EF42F16FB42AB003A5974 /* MainMenu.xib */; };
 		558A62B916FCA4EC00385C67 /* TimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 558A62B816FCA4EC00385C67 /* TimerView.xib */; };
 		558A62BC16FCA6E900385C67 /* TimerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 558A62BB16FCA6E900385C67 /* TimerWindowController.m */; };
+		55F42A031704BD26008C5E33 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F42A021704BD25008C5E33 /* AVFoundation.framework */; };
 		55FAD26616FE1188003B663C /* Dream.tif in Resources */ = {isa = PBXBuildFile; fileRef = 55FAD26516FE1188003B663C /* Dream.tif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		551228D516FBD26C00860341 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		55325A9E1704B2F9009B8AC3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		555EF41716FB42AB003A5974 /* SmallTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		555EF41A16FB42AB003A5974 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		555EF41D16FB42AB003A5974 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		555EF41E16FB42AB003A5974 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		555EF41F16FB42AB003A5974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +38,7 @@
 		558A62B816FCA4EC00385C67 /* TimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerView.xib; sourceTree = "<group>"; };
 		558A62BA16FCA6E900385C67 /* TimerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerWindowController.h; sourceTree = "<group>"; };
 		558A62BB16FCA6E900385C67 /* TimerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerWindowController.m; sourceTree = "<group>"; };
+		55F42A021704BD25008C5E33 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		55FAD26516FE1188003B663C /* Dream.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Dream.tif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555EF41B16FB42AB003A5974 /* Cocoa.framework in Frameworks */,
+				55F42A031704BD26008C5E33 /* AVFoundation.framework in Frameworks */,
+				55325A9F1704B2F9009B8AC3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +77,8 @@
 		555EF41916FB42AB003A5974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				555EF41A16FB42AB003A5974 /* Cocoa.framework */,
+				55F42A021704BD25008C5E33 /* AVFoundation.framework */,
+				55325A9E1704B2F9009B8AC3 /* Cocoa.framework */,
 				555EF41C16FB42AB003A5974 /* Other Frameworks */,
 			);
 			name = Frameworks;

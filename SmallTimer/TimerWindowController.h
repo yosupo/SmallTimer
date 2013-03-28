@@ -15,5 +15,6 @@
 
 - (IBAction)pushStartButton:(id)sender;
 - (IBAction)endTimeEditing:(id)sender;
+- (IBAction)pushMusicSelectButton:(id)sender;
 
 @end
