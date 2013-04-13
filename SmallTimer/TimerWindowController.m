@@ -64,7 +64,7 @@
 {
     if (setTimeField.intValue) {
         _startDate = [NSDate date];
-        _time = setTimeField.intValue * 1 + 1;
+        _time = setTimeField.intValue * 60 + 1;
         _timerTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(timerRef:) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timerTimer forMode:NSEventTrackingRunLoopMode];
         [self timerRef:_timerTimer];
@@ -83,7 +83,6 @@
     [openPanel beginWithCompletionHandler:^(NSInteger result){
         if (result == NSFileHandlingPanelOKButton) {
             _musicUrl = openPanel.URL;
-            NSLog(@"%@", _musicUrl);
         }
     }];
 }
